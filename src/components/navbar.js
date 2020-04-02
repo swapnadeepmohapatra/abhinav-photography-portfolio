@@ -23,7 +23,7 @@ export default class Navbar extends Component {
               </a>
             </li>
             <li>
-              <a href="#photos" className="smoothscroll">
+              <a href="#photo" className="smoothscroll">
                 My Clicks
               </a>
             </li>

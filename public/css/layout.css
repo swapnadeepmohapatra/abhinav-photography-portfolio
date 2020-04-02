@@ -10,7 +10,7 @@
    b. Header Styles
    c. About Section
    d. Resume Section
-   e. Portfolio Section
+   e. Photo Section
    f. Call To Action Section
    g. Testimonials Section
    h. Contact Section
@@ -41,6 +41,12 @@ header {
   text-align: center;
   overflow: hidden;
   background-attachment: fixed;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  header {
+    background: #161415 url(../images/buddha.jpeg) no-repeat top center;
+  }
 }
 
 #workHeader {
@@ -252,6 +258,11 @@ ul#nav li a:active {
 ul#nav li.current a {
   /* color: #e4d8d0; */
   color: #00cccd;
+}
+
+.photo-details {
+  display: flex;
+  align-items: flex-start;
 }
 
 /* ------------------------------------------------------------------ */
@@ -582,16 +593,16 @@ ul#nav li.current a {
 }
 
 /* ------------------------------------------------------------------ */
-/* e. Portfolio Section
+/* e. photo Section
 /* ------------------------------------------------------------------ */
 
-#portfolio {
-  background: #ebeeee;
+#photo {
+  background: #1e1e1e;
   padding-top: 90px;
   padding-bottom: 60px;
 }
-#portfolio h1 {
-  font: 15px/24px "opensans-semibold", sans-serif;
+#photo h1 {
+  font: 25px/24px "opensans-semibold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
@@ -599,11 +610,11 @@ ul#nav li.current a {
   color: #95a3a3;
 }
 
-/* Portfolio Content */
-#portfolio-wrapper .columns {
+/* photo Content */
+#photo-wrapper .columns {
   margin-bottom: 36px;
 }
-.portfolio-item .item-wrap {
+.photo-item .item-wrap {
   background: #fff;
   overflow: hidden;
   position: relative;
@@ -614,13 +625,13 @@ ul#nav li.current a {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.portfolio-item .item-wrap a {
+.photo-item .item-wrap a {
   display: block;
   cursor: pointer;
 }
 
 /* overlay */
-.portfolio-item .item-wrap .overlay {
+.photo-item .item-wrap .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -638,7 +649,7 @@ ul#nav li.current a {
 
   background: url(../images/overlay-bg.png) repeat;
 }
-.portfolio-item .item-wrap .link-icon {
+.photo-item .item-wrap .link-icon {
   display: block;
   color: #fff;
   height: 30px;
@@ -662,32 +673,20 @@ ul#nav li.current a {
   margin-left: -15px;
   margin-top: -15px;
 }
-.portfolio-item .item-wrap img {
+.photo-item .item-wrap img {
   vertical-align: bottom;
 }
-.portfolio-item .portfolio-item-meta {
-  padding: 18px;
-}
-.portfolio-item .portfolio-item-meta h5 {
-  font: 14px/21px "opensans-bold", sans-serif;
-  color: #fff;
-}
-.portfolio-item .portfolio-item-meta p {
-  font: 12px/18px "opensans-light", sans-serif;
-  color: #c6c7c7;
-  margin-bottom: 0;
+
+.photo-item {
+  transition: 1s;
 }
 
 /* on hover */
-.portfolio-item:hover .overlay {
-  opacity: 1;
-  -moz-opacity: 1;
-  filter: alpha(opacity=100);
-}
-.portfolio-item:hover .link-icon {
-  opacity: 1;
-  -moz-opacity: 1;
-  filter: alpha(opacity=100);
+.photo-item:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 #certificate {
@@ -1213,6 +1212,16 @@ call-to-action .button {
   color: #0d0d0d;
   background: #fff;
 }
+
+.back-btn {
+  color: #ffffff;
+  background: #e71c23;
+}
+.back-btn:hover {
+  color: #c1c1c1;
+  background: #3d4145;
+}
+
 #contact span.required {
   color: #11abb0;
   font-size: 13px;
