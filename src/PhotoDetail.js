@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Mailto from "react-protected-mailto";
 
 function PhotoDetail(props) {
   const { name, imgurl, description, subTitle } = props.location.state.item;
@@ -44,6 +45,18 @@ function PhotoDetail(props) {
         <h1 style={{ color: "#fff" }}>{name}</h1>
         <h3 style={{ color: "#99AAAB" }}>{subTitle}</h3>
         <p style={{ color: "#fff" }}>{description}</p>
+        <p>
+          Phone: <Mailto tel="205-454-1234" />
+          <br />
+          Email:{" "}
+          <Mailto
+            email="hello@coston.cool"
+            headers={
+              ({ subject: "Question from the website" },
+              { cc: "friend@coston.cool" })
+            }
+          />
+        </p>
       </div>
       <footer>Swapnadeep</footer>
     </div>

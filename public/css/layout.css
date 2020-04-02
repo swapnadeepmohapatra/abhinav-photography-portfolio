@@ -75,12 +75,12 @@ header {
   background-attachment: fixed;
 }
 
-#prizesHeader {
+#contactHeader {
   position: relative;
   height: 800px;
   min-height: 500px;
   width: 100%;
-  background: #161415 url(../images/trophy.png) no-repeat top center;
+  background: #161415 url(../images/contact_bg.jpeg) no-repeat top center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   text-align: center;

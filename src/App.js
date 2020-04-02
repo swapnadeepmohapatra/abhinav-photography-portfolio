@@ -5,6 +5,8 @@ import Header from "./components/header";
 import About from "./components/about";
 import ClicksHeader from "./components/clicksHeader";
 import MyClicks from "./components/myClicks";
+import ContactUs from "./components/contact";
+import ContactHeader from "./components/contactHeader";
 
 const Home = () => {
   return (
@@ -31,6 +33,8 @@ const Home = () => {
           }
         ]}
       />
+      <ContactHeader />
+      <ContactUs />
     </div>
   );
 };

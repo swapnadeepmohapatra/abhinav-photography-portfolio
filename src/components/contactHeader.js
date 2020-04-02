@@ -1,18 +1,18 @@
 import React from "react";
 
-const ClicksHeader = () => {
+const ContactHeader = () => {
   return (
     <React.Fragment>
-      <header id="workHeader">
+      <header id="contactHeader">
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline" style={{ textAlign: "center" }}>
-              My Clicks
+              Contact Me
             </h1>
           </div>
         </div>
         <p className="scrolldown">
-          <a className="smoothscroll" href="#photo">
+          <a className="smoothscroll" href="#contact">
             <i className="icon-down-circle" />
           </a>
         </p>
@@ -21,4 +21,4 @@ const ClicksHeader = () => {
   );
 };
 
-export default ClicksHeader;
+export default ContactHeader;
