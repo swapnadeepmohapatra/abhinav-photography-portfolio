@@ -7,6 +7,7 @@ import ClicksHeader from "./components/clicksHeader";
 import MyClicks from "./components/myClicks";
 import ContactUs from "./components/contact";
 import ContactHeader from "./components/contactHeader";
+import Footer from "./components/footer";
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
       />
       <ContactHeader />
       <ContactUs />
+      <Footer />
     </div>
   );
 };

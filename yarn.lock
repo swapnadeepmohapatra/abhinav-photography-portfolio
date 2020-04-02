@@ -8818,6 +8818,13 @@ react-app-polyfill@^1.0.6:
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
 
+react-copyright@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-copyright/-/react-copyright-0.0.1.tgz#ebd2bb5bcf778a0a5364a3bf109456a272c04640"
+  integrity sha1-69K7W893igpTZKO/EJRWonLARkA=
+  dependencies:
+    react-year "0.0.1"
+
 react-dev-utils@^10.2.1:
   version "10.2.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-10.2.1.tgz#f6de325ae25fa4d546d09df4bb1befdc6dd19c19"
@@ -8986,6 +8993,11 @@ react-typed@^1.2.0:
   dependencies:
     prop-types "^15.6.0"
     typed.js "^2.0.6"
+
+react-year@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-year/-/react-year-0.0.1.tgz#bcc523576be5d0660ce38b2a03d1b554119004c3"
+  integrity sha1-vMUjV2vl0GYM44sqA9G1VBGQBMM=
 
 react@^16.13.1:
   version "16.13.1"

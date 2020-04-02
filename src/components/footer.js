@@ -1,12 +1,18 @@
 import React, { Component } from "react";
+
 export default class Footer extends Component {
   render() {
-    let resumeData = this.props.resumeData;
     return (
       <footer>
         <div className="row">
           <div className="twelve columns">
             <ul className="social-links">
+              <h2>This Website was developed by Swapnadeep Mohapatra.</h2>
+              <h5 style={{ fontWeight: "lighter", color: "#c1c1c1" }}>
+                &#169; {new Date().getFullYear()}, Swapnadeep Mohapatra | All
+                right reserved.
+              </h5>
+
               {/* {resumeData.socialLinks &&
                 resumeData.socialLinks.map(item => {
                   return (
