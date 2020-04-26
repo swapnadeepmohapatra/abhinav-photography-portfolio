@@ -24,7 +24,9 @@ function PhotoDetail(props) {
 				<ul id="nav">
 					<li>
 						<Link to="/">
-							<button className="back-btn">Go Back</button>
+							<button className="back-btn" style={{ backgroundColor: '#1dab96' }}>
+								Go Back
+							</button>
 						</Link>
 					</li>
 				</ul>
