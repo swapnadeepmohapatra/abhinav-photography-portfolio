@@ -9,6 +9,7 @@ import ContactUs from './components/contact';
 import ContactHeader from './components/contactHeader';
 import Footer from './components/footer';
 import { getFirebase } from './firebase';
+// import Feedback from './components/feedback';
 
 const Home = () => {
 	const [loading, setLoading] = useState(true);
@@ -21,7 +22,7 @@ const Home = () => {
 			.orderByChild('_id')
 			.once('value')
 			.then((snapshot) => {
-				console.log(snapshot.val());
+				// console.log(snapshot.val());
 
 				let posts = [];
 				const snapshotVal = snapshot.val();
@@ -64,6 +65,7 @@ const Home = () => {
 			)}
 			<ContactHeader />
 			<ContactUs />
+			{/* <Feedback /> */}
 			<Footer />
 		</div>
 	);

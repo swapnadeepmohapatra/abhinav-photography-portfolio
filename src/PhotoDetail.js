@@ -8,7 +8,7 @@ function PhotoDetail(props) {
 
 	return (
 		<div
-			className="App "
+			className="App"
 			style={{
 				margin: 0,
 				overflow: 'hidden',

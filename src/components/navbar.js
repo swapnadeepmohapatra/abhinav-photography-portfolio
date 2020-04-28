@@ -32,11 +32,11 @@ export default class Navbar extends Component {
                 Contact Me
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#feedback" className="smoothscroll">
                 Feedback
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </React.Fragment>
